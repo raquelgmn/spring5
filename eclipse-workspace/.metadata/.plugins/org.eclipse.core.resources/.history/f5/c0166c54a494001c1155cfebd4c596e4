@@ -1,0 +1,11 @@
+package com.bolsadeideas.springboot.backend.apirest.models.entity;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+
+@Entity
+@Table(name"usuarios")
+public class Usuario implements Serializable{
+
+}

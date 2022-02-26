@@ -1,0 +1,5 @@
+package com.bolsadeideas.springboot.backend.apirest.models.service;
+
+public class IUsuarioService {
+
+}
