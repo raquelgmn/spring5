@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnoreProperties"/>
-    <fullyQualifiedTypeName name="com.bolsadeideas.springboot.backend.apirest.models.entity.Region"/>
-    <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="javax.persistence.Entity"/>
     <fullyQualifiedTypeName name="javax.persistence.Table"/>
     <fullyQualifiedTypeName name="javax.persistence.Id"/>
@@ -48,7 +45,6 @@
     <fullyQualifiedTypeName name="org.springframework.security.oauth2.common.DefaultOAuth2AccessToken"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="com.bolsadeideas.springboot.backend.apirest.models.service.IUsuarioService"/>
-    <fullyQualifiedTypeName name="com.bolsadeideas.springboot.backend.apirest.models.entity.Usuario"/>
     <fullyQualifiedTypeName name="org.springframework.security.oauth2.provider.token.TokenEnhancerChain"/>
     <fullyQualifiedTypeName name="org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity"/>
     <fullyQualifiedTypeName name="org.springframework.security.access.annotation.Secured"/>
@@ -60,4 +56,8 @@
     <fullyQualifiedTypeName name="org.springframework.boot.web.servlet.FilterRegistrationBean"/>
     <fullyQualifiedTypeName name="org.springframework.core.Ordered"/>
     <fullyQualifiedTypeName name="com.bolsadeideas.springboot.backend.apirest.auth.JwtConfig"/>
+    <fullyQualifiedTypeName name="com.bolsadeideas.springboot.backend.apirest.models.service.UsuarioService"/>
+    <fullyQualifiedTypeName name="com.bolsadeideas.springboot.backend.apirest.models.entity.Usuario"/>
+    <fullyQualifiedTypeName name="com.bolsadeideas.springboot.backend.apirest.models.service.IUploadFileService"/>
+    <fullyQualifiedTypeName name="com.bolsadeideas.springboot.backend.apirest.models.entity.Region"/>
 </qualifiedTypeNameHistroy>

@@ -18,7 +18,19 @@
       </ul>
 
       <ul class="navbar-nav ml-auto">
-        <li><a routerLink="['/login']" class="btn btn-outline-primary">Sign In</a></li>
+        <li *ngIf="!authService.isAuthenticated()"><a routerLink="/login" class="btn btn-outline-primary">Sign In</a></li>
+
+        <div *ngIf="authService.isAuthenticated()" class="dropdown show">
+          <a class="btn btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+            {{authService.usuario.username}}
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <button (click)= "logout()" class="dropdown-item" type="submit">Sign Out</button>
+          </div>
+
+        </div>
+
       </ul>
     </div>
   </div>

@@ -18,6 +18,10 @@ usuario: Usuario;
 }
 
   ngOnInit(): void {
+    if(this.authService.isAuthenticated()){
+      swal.fire('Login', `Hola ${this.authService.usuario.username} ya estás autenticado!`, 'info');
+      this.router.navigate(['/clientes']);
+    }
   }
 
   login(): void{
@@ -31,9 +35,20 @@ usuario: Usuario;
       console.log(response);
       let objetoPayload=(JSON.parse(atob(response.access_token.split(".")[1])));
       console.log(objetoPayload);
-      this.router.navigate(['/clientes']);
-      swal.fire('Login', `Hola ${response.username}, has iniciado sesión con éxito!`);
 
-    });
+      this.authService.guardarUsuario(response.access_token);
+      this.authService.guardarToken(response.access_token);
+
+      let usuario = this.authService.usuario;
+
+      this.router.navigate(['/clientes']);
+      swal.fire('Login', `Hola ${usuario.username}, has iniciado sesión con éxito!`);
+
+    }, err => {
+      if (err.status == 400){
+        swal.fire('Error Login', 'Usuario o clave incorrectas!', 'error');
+      }
+    }
+    );
   }
 }
