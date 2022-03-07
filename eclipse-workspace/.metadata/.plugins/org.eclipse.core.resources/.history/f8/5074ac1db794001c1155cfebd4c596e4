@@ -1,8 +1,0 @@
-package com.bolsadeideas.springboot.backend.apirest.auth;
-
-import org.springframework.context.annotation;
-
-@Configuration
-public class SpringSecurityConfig {
-
-}
